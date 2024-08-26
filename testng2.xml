@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="All Test Suite">
+    <listeners>
+        <listener class-name="TestComponents.Listners"/>
+    </listeners>
+<!--    <groups>-->
+<!--        <run>-->
+<!--            <include name="ErrorHandling"/> &lt;!&ndash;If we provide method in the classes then method will run irrespective of groups so give only class name while user &ndash;&gt;-->
+<!--        </run>-->
+<!--    </groups>-->
+    <test name="Order" thread-count="2">
+        <classes>
+            <class name="Test.SubmitOrderTest"/>
+
+        </classes>
+    </test>
+
+    <test  verbose="2" preserve-order="true" name="Error Validations" thread-count="5">
+        <classes>
+            <class name="Test.ErrorValidations"/>
+
+
+        </classes>
+    </test>
+
+</suite>

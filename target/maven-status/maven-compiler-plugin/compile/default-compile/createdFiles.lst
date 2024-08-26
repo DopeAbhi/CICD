@@ -1,0 +1,8 @@
+Resources/ExtentReporterNG.class
+PageObject/ConfirmationPage.class
+PageObject/CartPage.class
+PageObject/OrderPage.class
+PageObject/ProdutCatalouge.class
+PageObject/PaymentPage.class
+PageObject/LandingPage.class
+AbstractComponents/AbstractComponent.class

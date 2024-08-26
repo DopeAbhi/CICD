@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="9.023" tests="3" errors="0" skipped="1" failures="1">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/abhayverma/IdeaProjects/SeleniumFrameWork/target/test-classes:/Users/abhayverma/IdeaProjects/SeleniumFrameWork/target/classes:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-java/4.17.0/selenium-java-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-api/4.17.0/selenium-api-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.17.0/selenium-chrome-driver-4.17.0.jar:/Users/abhayverma/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.17.0/selenium-chromium-driver-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-json/4.17.0/selenium-json-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.17.0/selenium-manager-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v119/4.17.0/selenium-devtools-v119-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v120/4.17.0/selenium-devtools-v120-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v121/4.17.0/selenium-devtools-v121-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.17.0/selenium-devtools-v85-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.17.0/selenium-edge-driver-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.17.0/selenium-firefox-driver-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-http/4.17.0/selenium-http-4.17.0.jar:/Users/abhayverma/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.17.0/selenium-ie-driver-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.17.0/selenium-remote-driver-4.17.0.jar:/Users/abhayverma/.m2/repository/com/google/guava/guava/33.0.0-jre/guava-33.0.0-jre.jar:/Users/abhayverma/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/abhayverma/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/abhayverma/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/abhayverma/.m2/repository/org/checkerframework/checker-qual/3.41.0/checker-qual-3.41.0.jar:/Users/abhayverma/.m2/repository/com/google/errorprone/error_prone_annotations/2.23.0/error_prone_annotations-2.23.0.jar:/Users/abhayverma/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.23.1-alpha/opentelemetry-semconv-1.23.1-alpha.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-api/1.34.1/opentelemetry-api-1.34.1.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-context/1.34.1/opentelemetry-context-1.34.1.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.34.1/opentelemetry-exporter-logging-1.34.1.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.34.1/opentelemetry-sdk-common-1.34.1.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.34.1/opentelemetry-sdk-extension-autoconfigure-spi-1.34.1.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.34.1/opentelemetry-sdk-extension-autoconfigure-1.34.1.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.34.1-alpha/opentelemetry-api-events-1.34.1-alpha.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.34.1/opentelemetry-sdk-trace-1.34.1.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.34.1/opentelemetry-sdk-1.34.1.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.34.1/opentelemetry-sdk-metrics-1.34.1.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.34.1-alpha/opentelemetry-extension-incubator-1.34.1-alpha.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.34.1/opentelemetry-sdk-logs-1.34.1.jar:/Users/abhayverma/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-os/4.17.0/selenium-os-4.17.0.jar:/Users/abhayverma/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.17.0/selenium-safari-driver-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-support/4.17.0/selenium-support-4.17.0.jar:/Users/abhayverma/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/abhayverma/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/abhayverma/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/abhayverma/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/abhayverma/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/abhayverma/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar:/Users/abhayverma/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar:/Users/abhayverma/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar:/Users/abhayverma/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar:/Users/abhayverma/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/Users/abhayverma/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/abhayverma/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/Users/abhayverma/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/Users/abhayverma/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/22.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/abhayverma/IdeaProjects/SeleniumFrameWork/target/surefire/surefirebooter-20240825010054040_3.jar /Users/abhayverma/IdeaProjects/SeleniumFrameWork/target/surefire 2024-08-25T01-00-53_995-jvmRun1 surefire-20240825010054040_1tmp surefire_0-20240825010054040_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/abhayverma/IdeaProjects/SeleniumFrameWork/target/test-classes:/Users/abhayverma/IdeaProjects/SeleniumFrameWork/target/classes:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-java/4.17.0/selenium-java-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-api/4.17.0/selenium-api-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.17.0/selenium-chrome-driver-4.17.0.jar:/Users/abhayverma/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.17.0/selenium-chromium-driver-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-json/4.17.0/selenium-json-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.17.0/selenium-manager-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v119/4.17.0/selenium-devtools-v119-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v120/4.17.0/selenium-devtools-v120-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v121/4.17.0/selenium-devtools-v121-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.17.0/selenium-devtools-v85-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.17.0/selenium-edge-driver-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.17.0/selenium-firefox-driver-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-http/4.17.0/selenium-http-4.17.0.jar:/Users/abhayverma/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.17.0/selenium-ie-driver-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.17.0/selenium-remote-driver-4.17.0.jar:/Users/abhayverma/.m2/repository/com/google/guava/guava/33.0.0-jre/guava-33.0.0-jre.jar:/Users/abhayverma/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/abhayverma/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/abhayverma/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/abhayverma/.m2/repository/org/checkerframework/checker-qual/3.41.0/checker-qual-3.41.0.jar:/Users/abhayverma/.m2/repository/com/google/errorprone/error_prone_annotations/2.23.0/error_prone_annotations-2.23.0.jar:/Users/abhayverma/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.23.1-alpha/opentelemetry-semconv-1.23.1-alpha.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-api/1.34.1/opentelemetry-api-1.34.1.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-context/1.34.1/opentelemetry-context-1.34.1.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.34.1/opentelemetry-exporter-logging-1.34.1.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.34.1/opentelemetry-sdk-common-1.34.1.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.34.1/opentelemetry-sdk-extension-autoconfigure-spi-1.34.1.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.34.1/opentelemetry-sdk-extension-autoconfigure-1.34.1.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.34.1-alpha/opentelemetry-api-events-1.34.1-alpha.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.34.1/opentelemetry-sdk-trace-1.34.1.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.34.1/opentelemetry-sdk-1.34.1.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.34.1/opentelemetry-sdk-metrics-1.34.1.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.34.1-alpha/opentelemetry-extension-incubator-1.34.1-alpha.jar:/Users/abhayverma/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.34.1/opentelemetry-sdk-logs-1.34.1.jar:/Users/abhayverma/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-os/4.17.0/selenium-os-4.17.0.jar:/Users/abhayverma/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.17.0/selenium-safari-driver-4.17.0.jar:/Users/abhayverma/.m2/repository/org/seleniumhq/selenium/selenium-support/4.17.0/selenium-support-4.17.0.jar:/Users/abhayverma/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/abhayverma/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/abhayverma/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/abhayverma/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/abhayverma/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/abhayverma/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar:/Users/abhayverma/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar:/Users/abhayverma/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar:/Users/abhayverma/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar:/Users/abhayverma/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/Users/abhayverma/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/abhayverma/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/Users/abhayverma/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/Users/abhayverma/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/abhayverma"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/22.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/abhayverma/IdeaProjects/SeleniumFrameWork"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/abhayverma/IdeaProjects/SeleniumFrameWork/target/surefire/surefirebooter-20240825010054040_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="22.0.2"/>
+    <property name="user.name" value="abhayverma"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.5"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/abhayverma/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/n9/j_1p4bs97s1g_k3ygmh1ky100000gn/T/"/>
+    <property name="java.version" value="22.0.2"/>
+    <property name="user.dir" value="/Users/abhayverma/IdeaProjects/SeleniumFrameWork"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/abhayverma/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="22.0.2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="submitOrder[{password=Test@123, email=AbhayVerma@yopmail.com, productName=ADIDAS ORIGINAL}](1)" classname="Test.SubmitOrderTest" time="1.619">
+    <failure message="element click intercepted: Element &lt;button _ngcontent-rwh-c33=&quot;&quot; routerlink=&quot;/dashboard/cart&quot; class=&quot;btn btn-custom&quot; style=&quot;margin-top: -10px;&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (1439, 26). Other element would receive the click: &lt;div _ngcontent-rwh-c31=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=128.0.6613.84)&#10;Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;22.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [e02798b08a9862dd9142c435799b613b, clickElement {id=f.43A080C8CEC654EF4360B7386366B5D0.d.C4A49B2115357A8D73AB82EF9724C6BE.e.87}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: /var/folders/n9/j_1p4bs97s1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52746}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52746/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on mac (e02798b08a9862dd9142c435799b613b)] -&gt; xpath: //button[@routerlink=&apos;/dashboard/cart&apos;]]&#10;Session ID: e02798b08a9862dd9142c435799b613b" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button _ngcontent-rwh-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1439, 26). Other element would receive the click: <div _ngcontent-rwh-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=128.0.6613.84)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e02798b08a9862dd9142c435799b613b, clickElement {id=f.43A080C8CEC654EF4360B7386366B5D0.d.C4A49B2115357A8D73AB82EF9724C6BE.e.87}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: /var/folders/n9/j_1p4bs97s1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52746}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52746/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (e02798b08a9862dd9142c435799b613b)] -> xpath: //button[@routerlink='/dashboard/cart']]
+Session ID: e02798b08a9862dd9142c435799b613b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+	at AbstractComponents.AbstractComponent.cartNavigation(AbstractComponent.java:39)
+	at Test.SubmitOrderTest.submitOrder(SubmitOrderTest.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Aug 25, 2024 1:00:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 128
+Aug 25, 2024 1:00:55 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 128.0.6613.84. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.17.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="submitOrder[{password=Test@123, email=AbhayVerma1@yopmail.com, productName=ZARA COAT 3}](2)" classname="Test.SubmitOrderTest" time="2.884">
+    <system-err><![CDATA[Aug 25, 2024 1:00:59 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 128
+Aug 25, 2024 1:00:59 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 128.0.6613.84. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.17.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="OrderHistoryTest" classname="Test.SubmitOrderTest" time="0.0">
+    <skipped message="Method Test.SubmitOrderTest.OrderHistoryTest() on instance Test.SubmitOrderTest@7c417213 depends on not successfully finished methods &#10;[Test.SubmitOrderTest.submitOrder() on instance Test.SubmitOrderTest@7c417213]"/>
+  </testcase>
+</testsuite>

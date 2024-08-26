@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="All Test Suite">
+    <groups>
+        <run>
+            <include name="Purchase"/> <!--If we provide method in the classes then method will run irrespective of groups so give only class name while using groups -->
+        </run>
+    </groups>
+    <test  verbose="2" preserve-order="true" name="Purchase Order" thread-count="5">
+        <classes>
+            <class name="Test.SubmitOrderTest"/>
+        </classes>
+    </test>
+
+</suite>
