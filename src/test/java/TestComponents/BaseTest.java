@@ -28,6 +28,7 @@ import java.util.Properties;
 public class BaseTest {
    public WebDriver driver;
    public  LandingPage page;
+
     public WebDriver intializeDriver() throws IOException {
 
         //Setting Global Properties
