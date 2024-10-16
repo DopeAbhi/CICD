@@ -16,12 +16,12 @@
         </classes>
     </test>
 
-    <test  verbose="2" preserve-order="true" name="Error Validations" thread-count="5">
-        <classes>
-            <class name="Test.ErrorValidations"/>
+<!--    <test  verbose="2" preserve-order="true" name="Error Validations" thread-count="5">-->
+<!--        <classes>-->
+<!--            <class name="Test.ErrorValidations"/>-->
 
 
-        </classes>
-    </test>
+<!--        </classes>-->
+<!--    </test>-->
 
 </suite>

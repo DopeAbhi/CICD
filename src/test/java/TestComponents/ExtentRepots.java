@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.io.File;
+
 public class ExtentRepots {
     ExtentReports extent;
     @BeforeTest
@@ -17,10 +19,15 @@ public class ExtentRepots {
         ExtentSparkReporter reporter = new ExtentSparkReporter(path);
         reporter.config().setReportName("Web Automation Results");
         reporter.config().setDocumentTitle("Test Results");
+     String css="<link href='testng-reports.css' rel='stylesheet' type='text/css'/>";
+        String js = "<script src='testng-reports.js' type='text/javascript'></script>";
+        reporter.config().setCss(css);
+        reporter.config().setJs(js);
 
        extent= new ExtentReports();
         extent.attachReporter(reporter);
         extent.setSystemInfo("Tester", "Rahul Shetty");
+
     }
 @Test
     public void intialDemo()

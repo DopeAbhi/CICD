@@ -3,6 +3,7 @@ package TestComponents;
 import Resources.ExtentReporterNG;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
@@ -23,6 +24,15 @@ public class Listners extends BaseTest implements ITestListener {
 
         test = extentReports.createTest(result.getMethod().getMethodName()); //It gets test name
         extentTest.set(test); //uniques thread id to the running test //In Java every instance has it own thread ID
+
+
+
+        try {
+            // Start recording when test starts
+            ScreenRecorderUtil.startRecord(result.getMethod().getMethodName());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 
@@ -30,6 +40,25 @@ public class Listners extends BaseTest implements ITestListener {
     public void onTestSuccess(ITestResult result) {
         extentTest.get().log(Status.PASS, "Test Pass");
         test.log(Status.PASS, "Test Pass");
+
+        try {
+            // Stop recording on test skip
+            ScreenRecorderUtil.stopRecord();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        String base64Video = null;
+        try {
+            base64Video = ((ScreenRecorderUtil) ScreenRecorderUtil.screenRecorder).convertMovieToBase64();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        // Add video to Extent Report (assuming you have a report instance set up)
+       extentTest.get().log(Status.INFO, "Pass",
+                MediaEntityBuilder.createScreenCaptureFromBase64String(base64Video, "Recorded Video").build());
+
+
     }
 
     @Override
@@ -46,6 +75,7 @@ public class Listners extends BaseTest implements ITestListener {
 
             //            test.addScreenCaptureFromPath(filePath,result.getMethod().getMethodName());//Attaching screenshot to the test report
             extentTest.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
+
             //Fields are associated with the class level not the method level
             //In above method we are test class of testNG->real class of test-> then getting driver field from the class
         } catch (Exception e) {  //Generic Exception for all type of exception
@@ -53,6 +83,27 @@ public class Listners extends BaseTest implements ITestListener {
         }
         extentTest.get().fail(result.getThrowable());
 
+        try {
+            // Stop recording on test skip
+            ScreenRecorderUtil.stopRecord();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        String base64Video = null;
+        try {
+            base64Video = ((ScreenRecorderUtil) ScreenRecorderUtil.screenRecorder).convertMovieToBase64();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        String videoHTML = "<video width='320' height='240' controls>" +
+                "<source src='data:video/mp4;base64," + base64Video + "' type='video/mp4'>" +
+                "Your browser does not support the video tag." +
+                "</video>";
+        test.log(Status.INFO, videoHTML); // Add the video tag to the log
+
+        // Add video to Extent Report (assuming you have a report instance set up)
+            extentReports.attachReporter();
     }
         @Override
         public void onTestSkipped (ITestResult result){
